@@ -13,8 +13,8 @@ export const site = {
   phone: "+229 01 69 27 25 95",
   phoneHref: "tel:+2290169272595",
   // À mettre à jour avec le nom de domaine final une fois choisi/acheté.
-  // Par défaut : l'URL Vercel attendue pour ce projet (portfolio-erfero.vercel.app).
-  url: "https://portfolio-erfero.vercel.app",
+  // Par défaut : l'URL Vercel choisie pour ce projet.
+  url: "https://erfero-keoula.vercel.app",
   heroDescription: {
     fr: "J'accompagne les fondateurs et les équipes pour transformer leurs idées en produits web solides : sites, applications, boutiques Shopify et plateformes sur-mesure, du frontend à la base de données.",
     en: "I help founders and teams turn their ideas into solid web products: sites, applications, Shopify stores and custom platforms, from the frontend down to the database.",
