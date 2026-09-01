@@ -35,7 +35,7 @@ export function Hero() {
     const setup = () => {
       tween?.scrollTrigger?.kill();
       tween?.kill();
-      const range = isMobile() ? 8 : 18;
+      const range = isMobile() ? 6 : 12;
       tween = gsap.fromTo(
         portraitRef.current,
         { yPercent: -range },
@@ -67,10 +67,10 @@ export function Hero() {
     <section
       ref={sectionRef}
       aria-label={locale === "fr" ? "Accueil" : "Home"}
-      className="relative flex min-h-[92vh] flex-col justify-end overflow-hidden bg-gradient-to-br from-[#f05038] via-[#e8452c] to-[#c73a24] text-white"
+      className="relative flex min-h-[100vh] flex-col overflow-hidden bg-gradient-to-br from-[#f05038] via-[#e8452c] to-[#c73a24] text-white"
     >
       <div
-        className="pointer-events-none absolute inset-0 opacity-[0.07]"
+        className="pointer-events-none absolute inset-0 z-0 opacity-[0.07]"
         style={{
           backgroundImage:
             "linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)",
@@ -79,62 +79,60 @@ export function Hero() {
         aria-hidden="true"
       />
 
-      <div className="pointer-events-none absolute inset-x-0 top-[8vh] select-none opacity-[0.16] mix-blend-overlay md:top-[6vh]">
+      <div
+        ref={portraitRef}
+        className="absolute inset-y-0 right-0 z-0 w-full md:w-[58%]"
+      >
+        <Image
+          src="/images/erfero.jpg"
+          alt={site.name}
+          fill
+          sizes="(min-width: 768px) 58vw, 100vw"
+          className="object-cover object-top opacity-30 md:opacity-100"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#e8452c] via-[#e8452c]/40 to-transparent md:from-[#e8452c] md:via-transparent md:to-transparent" />
+      </div>
+
+      <div className="pointer-events-none absolute inset-x-0 top-[6vh] z-10 select-none opacity-[0.14] mix-blend-overlay">
         <Marquee>
-          <span className="font-headline text-[18vw] uppercase leading-none tracking-tight whitespace-nowrap md:text-[13vw]">
+          <span className="font-headline text-[18vw] uppercase leading-none tracking-tight whitespace-nowrap md:text-[12vw]">
             {site.name}
           </span>
         </Marquee>
       </div>
 
-      <div className="relative mx-auto flex w-full max-w-6xl flex-1 items-center px-6 pt-32">
-        <div className="grid w-full items-center gap-12 md:grid-cols-[1.15fr_0.85fr]">
-          <div className="flex flex-col gap-6">
-            <Reveal>
-              <p className="font-mono text-sm uppercase tracking-widest text-white/80">{t(site.tagline)}</p>
-            </Reveal>
-            <Reveal delay={0.05}>
-              <h1 className="font-display text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl">
-                {site.name}
-              </h1>
-            </Reveal>
-            <Reveal delay={0.1}>
-              <p className="max-w-xl text-base text-white/85 md:text-lg">{t(site.heroDescription)}</p>
-            </Reveal>
-            <Reveal delay={0.15}>
-              <div className="flex flex-wrap items-center gap-4 pt-2">
-                <Button
-                  href="/projets"
-                  className="bg-white text-[#c73a24] hover:bg-[#0a0a0a] hover:text-white"
-                >
-                  {locale === "fr" ? "Voir mes projets" : "See my work"}
-                </Button>
-                <Button href="/contact" variant="outline" className="border-white/40 text-white hover:border-white hover:text-white">
-                  {locale === "fr" ? "Me contacter" : "Get in touch"}
-                </Button>
-              </div>
-            </Reveal>
-          </div>
-
-          <Reveal delay={0.1} className="flex justify-center md:justify-end">
-            <div
-              ref={portraitRef}
-              className="relative aspect-[4/5] w-full max-w-sm overflow-hidden rounded-[2rem] border-4 border-white/20 bg-black/20 shadow-2xl"
-            >
-              <Image
-                src="/images/erfero.jpg"
-                alt={site.name}
-                fill
-                sizes="(min-width: 768px) 24rem, 80vw"
-                className="object-cover"
-                priority
-              />
+      <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-1 items-center px-6 pt-28">
+        <div className="flex max-w-xl flex-col gap-6">
+          <Reveal>
+            <p className="font-mono text-sm uppercase tracking-widest text-white/80">{t(site.tagline)}</p>
+          </Reveal>
+          <Reveal delay={0.05}>
+            <h1 className="font-display text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl">
+              {site.name}
+            </h1>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <p className="text-base text-white/90 md:text-lg">{t(site.heroDescription)}</p>
+          </Reveal>
+          <Reveal delay={0.15}>
+            <div className="flex flex-wrap items-center gap-4 pt-2">
+              <Button href="/projets" className="bg-white text-[#c73a24] hover:bg-[#0a0a0a] hover:text-white">
+                {locale === "fr" ? "Voir mes projets" : "See my work"}
+              </Button>
+              <Button
+                href="/contact"
+                variant="outline"
+                className="border-white/40 text-white hover:border-white hover:text-white"
+              >
+                {locale === "fr" ? "Me contacter" : "Get in touch"}
+              </Button>
             </div>
           </Reveal>
         </div>
       </div>
 
-      <div className="relative mx-auto mt-16 w-full max-w-6xl px-6 pb-10">
+      <div className="relative z-10 mx-auto mt-16 w-full max-w-6xl px-6 pb-10">
         <div className="flex flex-wrap items-center justify-between gap-6 border-t border-white/20 pt-6">
           <p className="font-mono text-sm leading-tight text-white/85">
             <span className="block">{locale === "fr" ? "// Développeur" : "// Developer"}</span>

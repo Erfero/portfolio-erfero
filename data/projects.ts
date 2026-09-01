@@ -732,6 +732,393 @@ export const projects: Project[] = [
     image: null,
     category: "shopify",
   },
+  {
+    slug: "qivote",
+    name: { fr: "QiVOTE", en: "QiVOTE" },
+    tagline: {
+      fr: "Plateforme de vote en ligne pour événements et concours",
+      en: "Online voting platform for events and contests",
+    },
+    description: {
+      fr: "QiVOTE est une plateforme web qui permet d'organiser des campagnes de vote en ligne (événements, concours, nominations) et de laisser le public soutenir ses favoris en temps réel. Elle regroupe la découverte d'événements, le vote multi-catégories, le paiement et le suivi des résultats dans une interface moderne et responsive.",
+      en: "QiVOTE is a web platform for running online voting campaigns (events, contests, nominations) and letting the public back their favorites in real time. It brings together event discovery, multi-category voting, payment and results tracking in a modern, responsive interface.",
+    },
+    context: {
+      fr: "Projet réalisé en binôme avec Axel Salim, dans le cadre de missions de développement web communes.",
+      en: "Project built in collaboration with Axel Salim, as part of shared web development work.",
+    },
+    role: {
+      fr: "Développement fullstack : interfaces frontend (Next.js, Shadcn UI) et logique de vote et de paiement.",
+      en: "Fullstack development: frontend interfaces (Next.js, Shadcn UI) and voting/payment logic.",
+    },
+    results: {
+      fr: "En ligne et fonctionnel.",
+      en: "Live and functional.",
+    },
+    features: {
+      fr: [
+        "Découverte d'événements et vote multi-catégories",
+        "Paiement intégré pour soutenir ses favoris",
+        "Suivi des résultats en temps réel",
+        "Interface moderne et responsive",
+      ],
+      en: [
+        "Event discovery and multi-category voting",
+        "Integrated payment to support favorites",
+        "Real-time results tracking",
+        "Modern, responsive interface",
+      ],
+    },
+    tags: ["nextjs", "fullstack", "payments"],
+    stack: ["Next.js", "Shadcn UI", "Formik", "Yup"],
+    externalLink: "https://www.adjakidjeaxel.com/projets/qivote",
+    image: null,
+    category: "fullstack",
+  },
+  {
+    slug: "kumba",
+    name: { fr: "Kumba", en: "Kumba" },
+    tagline: {
+      fr: "Location de logements au Bénin, sans intermédiaires",
+      en: "Home rentals in Benin, no middlemen",
+    },
+    description: {
+      fr: "Kumba est une plateforme de location et de réservation de logements qui simplifie la recherche d'hébergements au Bénin. Conçue comme une alternative directe aux démarcheurs et aux intermédiaires, elle met en relation locataires et propriétaires via une application mobile intuitive, avec une landing page dédiée à la présentation du service et au téléchargement de l'application.",
+      en: "Kumba is a housing rental and booking platform that simplifies finding accommodation in Benin. Designed as a direct alternative to brokers and middlemen, it connects tenants and landlords through an intuitive mobile app, with a landing page dedicated to presenting the service and app downloads.",
+    },
+    context: {
+      fr: "Projet réalisé en binôme avec Axel Salim, dans le cadre de missions de développement web communes.",
+      en: "Project built in collaboration with Axel Salim, as part of shared web development work.",
+    },
+    role: {
+      fr: "Développement fullstack : interface React et API Laravel/MySQL.",
+      en: "Fullstack development: React interface and Laravel/MySQL API.",
+    },
+    results: {
+      fr: "En ligne et fonctionnel.",
+      en: "Live and functional.",
+    },
+    features: {
+      fr: [
+        "Recherche de logements par ville et par durée",
+        "Mise en relation directe locataires / propriétaires",
+        "Application mobile dédiée",
+        "Landing page de présentation et de téléchargement",
+      ],
+      en: [
+        "Search for housing by city and duration",
+        "Direct connection between tenants and landlords",
+        "Dedicated mobile app",
+        "Presentation and download landing page",
+      ],
+    },
+    tags: ["react", "laravel", "mysql"],
+    stack: ["React", "Laravel", "MySQL"],
+    externalLink: "https://www.adjakidjeaxel.com/projets/kumba",
+    image: null,
+    category: "fullstack",
+  },
+  {
+    slug: "ecochamp",
+    name: { fr: "EcoChamp", en: "EcoChamp" },
+    tagline: {
+      fr: "Un réseau social utile pour l'action environnementale",
+      en: "A useful social network for environmental action",
+    },
+    description: {
+      fr: "EcoChamp est une plateforme pensée pour mobiliser, sensibiliser et récompenser les actions environnementales. Ce n'est pas un réseau social classique, mais un réseau social utile où chaque interaction a un impact mesurable.",
+      en: "EcoChamp is a platform designed to mobilize, raise awareness and reward environmental action. Not a classic social network, but a useful one where every interaction has a measurable impact.",
+    },
+    context: {
+      fr: "Projet réalisé en binôme avec Axel Salim, dans le cadre de missions de développement web communes.",
+      en: "Project built in collaboration with Axel Salim, as part of shared web development work.",
+    },
+    role: {
+      fr: "Développement fullstack : interface React/Vite et logique applicative.",
+      en: "Fullstack development: React/Vite interface and application logic.",
+    },
+    results: {
+      fr: "En ligne et fonctionnel.",
+      en: "Live and functional.",
+    },
+    features: {
+      fr: [
+        "Actions environnementales avec impact mesurable",
+        "Mécanique de récompense communautaire",
+        "Interface légère et rapide (Vite)",
+        "Composants Flowbite React",
+      ],
+      en: [
+        "Environmental actions with measurable impact",
+        "Community reward mechanics",
+        "Light, fast interface (Vite)",
+        "Flowbite React components",
+      ],
+    },
+    tags: ["react", "vite", "community"],
+    stack: ["React", "Vite", "Flowbite React"],
+    externalLink: "https://www.adjakidjeaxel.com/projets/ecochamp",
+    image: null,
+    category: "fullstack",
+  },
+  {
+    slug: "smoni",
+    name: { fr: "Smoni", en: "Smoni" },
+    tagline: {
+      fr: "Auto-école digitale, du code à l'examen",
+      en: "Digital driving school, from theory to test",
+    },
+    description: {
+      fr: "Smoni est une plateforme d'auto-école digitale qui combine outils en ligne et services physiques pour accompagner les élèves jusqu'à l'obtention du permis de conduire.",
+      en: "Smoni is a digital driving-school platform combining online tools and in-person services to guide students all the way to their driving licence.",
+    },
+    context: {
+      fr: "Projet réalisé en binôme avec Axel Salim, dans le cadre de missions de développement web communes.",
+      en: "Project built in collaboration with Axel Salim, as part of shared web development work.",
+    },
+    role: {
+      fr: "Développement fullstack : interface React et API Laravel/PostgreSQL.",
+      en: "Fullstack development: React interface and Laravel/PostgreSQL API.",
+    },
+    results: {
+      fr: "En ligne et fonctionnel.",
+      en: "Live and functional.",
+    },
+    features: {
+      fr: [
+        "Parcours pédagogique en ligne",
+        "Prise de rendez-vous pour les cours pratiques",
+        "Suivi de la progression de l'élève",
+        "API Laravel avec base PostgreSQL",
+      ],
+      en: [
+        "Online learning path",
+        "Booking for practical lessons",
+        "Student progress tracking",
+        "Laravel API with a PostgreSQL database",
+      ],
+    },
+    tags: ["react", "laravel", "postgresql"],
+    stack: ["React", "Laravel", "PostgreSQL"],
+    externalLink: "https://www.adjakidjeaxel.com/projets/smoni",
+    image: null,
+    category: "fullstack",
+  },
+  {
+    slug: "walab",
+    name: { fr: "Walab", en: "Walab" },
+    tagline: {
+      fr: "Analyses médicales en ligne, résultats à distance",
+      en: "Online lab tests, results anywhere",
+    },
+    description: {
+      fr: "Walab est une application web qui simplifie l'accès aux analyses médicales. Les utilisateurs peuvent commander des tests en ligne (bilans sanguins, prélèvements, analyses de laboratoire), planifier un rendez-vous pour un prélèvement à domicile, payer en ligne et consulter leurs résultats depuis leur ordinateur ou mobile.",
+      en: "Walab is a web app that simplifies access to medical lab tests. Users can order tests online (blood work, sample collection, lab analysis), book an at-home sample collection appointment, pay online and view their results from computer or mobile.",
+    },
+    context: {
+      fr: "Projet réalisé en binôme avec Axel Salim, dans le cadre de missions de développement web communes.",
+      en: "Project built in collaboration with Axel Salim, as part of shared web development work.",
+    },
+    role: {
+      fr: "Développement fullstack : interface React et API Laravel/MySQL.",
+      en: "Fullstack development: React interface and Laravel/MySQL API.",
+    },
+    results: {
+      fr: "En ligne et fonctionnel.",
+      en: "Live and functional.",
+    },
+    features: {
+      fr: [
+        "Commande d'analyses médicales en ligne",
+        "Prise de rendez-vous pour prélèvement à domicile",
+        "Paiement en ligne sécurisé",
+        "Consultation des résultats à distance",
+      ],
+      en: [
+        "Online medical test ordering",
+        "Booking for at-home sample collection",
+        "Secure online payment",
+        "Remote results access",
+      ],
+    },
+    tags: ["react", "laravel", "mysql"],
+    stack: ["React", "Laravel", "MySQL"],
+    externalLink: "https://www.adjakidjeaxel.com/projets/walab",
+    image: null,
+    category: "fullstack",
+  },
+  {
+    slug: "nakama-2026",
+    name: { fr: "Nakama 2026", en: "Nakama 2026" },
+    tagline: {
+      fr: "Site événementiel pour un rassemblement otaku",
+      en: "Event site for an otaku gathering",
+    },
+    description: {
+      fr: "Nakama est un site web événementiel qui présente une journée de rassemblement otaku : programme détaillé (accueil, jeux, karaoké, concours), présentation de l'événement, galerie visuelle et achat de billets en ligne.",
+      en: "Nakama is an event website presenting a one-day otaku gathering: a detailed schedule (welcome, games, karaoke, contests), event presentation, visual gallery and online ticket sales.",
+    },
+    context: {
+      fr: "Projet réalisé en binôme avec Axel Salim, dans le cadre de missions de développement web communes.",
+      en: "Project built in collaboration with Axel Salim, as part of shared web development work.",
+    },
+    role: {
+      fr: "Développement fullstack : interface Nuxt/Vue et intégration de la billetterie.",
+      en: "Fullstack development: Nuxt/Vue interface and ticketing integration.",
+    },
+    results: {
+      fr: "En ligne et fonctionnel.",
+      en: "Live and functional.",
+    },
+    features: {
+      fr: [
+        "Programme détaillé de l'événement",
+        "Galerie visuelle",
+        "Achat de billets en ligne",
+        "Rendu statique rapide (Nuxt 4)",
+      ],
+      en: [
+        "Detailed event schedule",
+        "Visual gallery",
+        "Online ticket purchase",
+        "Fast static rendering (Nuxt 4)",
+      ],
+    },
+    tags: ["nuxt", "vue", "typescript"],
+    stack: ["Nuxt 4", "Vue 3", "TypeScript"],
+    externalLink: "https://www.adjakidjeaxel.com/projets/nakama_2026",
+    image: null,
+    category: "fullstack",
+  },
+  {
+    slug: "succes-energies",
+    name: { fr: "Succès Énergies", en: "Succès Énergies" },
+    tagline: {
+      fr: "Vitrine pour une agence multidisciplinaire",
+      en: "Showcase site for a multidisciplinary agency",
+    },
+    description: {
+      fr: "Succès Énergies est un site web vitrine pour une agence multidisciplinaire présentant ses activités dans l'immobilier, l'aménagement du territoire, la construction, l'électricité et l'import-export. Le site est conçu pour présenter l'entreprise, ses services et ses valeurs, tout en permettant aux visiteurs d'entrer facilement en contact.",
+      en: "Succès Énergies is a showcase site for a multidisciplinary agency covering real estate, urban planning, construction, electrical work and import-export. It presents the company, its services and its values, while making it easy for visitors to get in touch.",
+    },
+    context: {
+      fr: "Projet réalisé en binôme avec Axel Salim, dans le cadre de missions de développement web communes.",
+      en: "Project built in collaboration with Axel Salim, as part of shared web development work.",
+    },
+    role: {
+      fr: "Développement fullstack : interface Vue.js et intégration du contenu.",
+      en: "Fullstack development: Vue.js interface and content integration.",
+    },
+    results: {
+      fr: "En ligne et fonctionnel.",
+      en: "Live and functional.",
+    },
+    features: {
+      fr: [
+        "Présentation des 5 pôles d'activité de l'agence",
+        "Mise en avant des valeurs de l'entreprise",
+        "Formulaire de contact",
+        "Interface rapide (Vite + Tailwind CSS)",
+      ],
+      en: [
+        "Presentation of the agency's 5 business units",
+        "Company values highlighted",
+        "Contact form",
+        "Fast interface (Vite + Tailwind CSS)",
+      ],
+    },
+    tags: ["vuejs", "vite", "tailwind"],
+    stack: ["Vue.js", "Vite", "Tailwind CSS"],
+    externalLink: "https://www.adjakidjeaxel.com/projets/succes_energies",
+    image: null,
+    category: "fullstack",
+  },
+  {
+    slug: "djimans-record",
+    name: { fr: "Djiman's Record", en: "Djiman's Record" },
+    tagline: {
+      fr: "Plateforme complète pour un studio d'enregistrement",
+      en: "Full platform for a recording studio",
+    },
+    description: {
+      fr: "DJIMAN'S RECORDS est la plateforme web d'un studio d'enregistrement professionnel. Elle combine un site vitrine (services, portfolio, tarifs, blog, contact) et un back-office pour gérer l'ensemble du contenu : vidéos, articles, offres, services, projets et annonces. Le site est bilingue, responsive, optimisé pour le référencement, et inclut un suivi détaillé de l'audience dans le dashboard admin.",
+      en: "DJIMAN'S RECORDS is the web platform for a professional recording studio. It combines a showcase site (services, portfolio, pricing, blog, contact) with a back-office to manage all content: videos, articles, offers, services, projects and announcements. The site is bilingual, responsive, SEO-optimized, and includes detailed audience tracking in the admin dashboard.",
+    },
+    context: {
+      fr: "Projet réalisé en binôme avec Axel Salim, dans le cadre de missions de développement web communes.",
+      en: "Project built in collaboration with Axel Salim, as part of shared web development work.",
+    },
+    role: {
+      fr: "Développement fullstack : interface React et API Django/PostgreSQL, back-office inclus.",
+      en: "Fullstack development: React interface and Django/PostgreSQL API, including the back-office.",
+    },
+    results: {
+      fr: "En ligne et fonctionnel.",
+      en: "Live and functional.",
+    },
+    features: {
+      fr: [
+        "Site vitrine + back-office de gestion de contenu",
+        "Blog, offres et annonces gérés en autonomie",
+        "Site bilingue et optimisé SEO",
+        "Suivi d'audience dans le dashboard admin",
+      ],
+      en: [
+        "Showcase site + content management back-office",
+        "Blog, offers and announcements managed autonomously",
+        "Bilingual, SEO-optimized site",
+        "Audience tracking in the admin dashboard",
+      ],
+    },
+    tags: ["react", "django", "postgresql"],
+    stack: ["React", "Django", "PostgreSQL"],
+    externalLink: "https://www.adjakidjeaxel.com/projets/djimans_record",
+    image: null,
+    category: "fullstack",
+  },
+  {
+    slug: "sms-xender",
+    name: { fr: "SMS Xender", en: "SMS Xender" },
+    tagline: {
+      fr: "Plateforme d'envoi de SMS en masse pour entreprises",
+      en: "Bulk SMS platform for businesses",
+    },
+    description: {
+      fr: "Sms Xender est une plateforme d'envoi de SMS en masse à destination des entreprises. Elle sert de vitrine produit : elle présente les fonctionnalités, les offres et les cas d'usage, et permet aux visiteurs de s'informer, de contacter l'équipe ou d'accéder à l'espace de connexion.",
+      en: "SMS Xender is a bulk SMS platform for businesses. It serves as a product showcase: presenting features, plans and use cases, and letting visitors learn more, contact the team or access the login area.",
+    },
+    context: {
+      fr: "Projet réalisé en binôme avec Axel Salim, dans le cadre de missions de développement web communes.",
+      en: "Project built in collaboration with Axel Salim, as part of shared web development work.",
+    },
+    role: {
+      fr: "Développement fullstack : interface React (avec Three.js) et logique produit.",
+      en: "Fullstack development: React interface (with Three.js) and product logic.",
+    },
+    results: {
+      fr: "En ligne et fonctionnel.",
+      en: "Live and functional.",
+    },
+    features: {
+      fr: [
+        "Présentation des fonctionnalités et des offres",
+        "Cas d'usage pour entreprises",
+        "Accents visuels 3D (Three.js)",
+        "Formulaires validés (Formik/Yup)",
+      ],
+      en: [
+        "Feature and pricing presentation",
+        "Business use cases",
+        "3D visual accents (Three.js)",
+        "Validated forms (Formik/Yup)",
+      ],
+    },
+    tags: ["react", "threejs", "b2b"],
+    stack: ["React", "Three.js", "Formik", "Yup"],
+    externalLink: "https://www.adjakidjeaxel.com/projets/sms_xender",
+    image: "/images/projects/sms-xender.jpg",
+    category: "fullstack",
+  },
 ];
 
 export function getProjectBySlug(slug: string): Project | undefined {

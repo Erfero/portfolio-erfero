@@ -29,12 +29,12 @@ export function SiteFooter() {
           <ArrowUp className="h-4 w-4" />
         </button>
 
-        <div className="pointer-events-none absolute inset-0 z-0 flex items-center justify-center">
+        <div className="pointer-events-none absolute inset-0 z-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/images/erfero.jpg"
             alt=""
-            className="h-[78%] w-auto object-cover grayscale"
+            className="h-full w-full object-cover object-top grayscale"
             style={{ mixBlendMode: "normal" }}
           />
         </div>
