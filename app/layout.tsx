@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono, Poppins } from "next/font/google";
+import { Anton, Inter, JetBrains_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 import { LocaleProvider } from "@/lib/locale-context";
 import { ThemeProvider, THEME_BOOTSTRAP_SCRIPT } from "@/lib/theme-context";
@@ -21,6 +21,14 @@ const poppins = Poppins({
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains",
+  subsets: ["latin"],
+});
+
+// Closest free equivalent to the licensed "Headline One/Two" (HPLHS) fonts
+// used for bold vintage-headline treatments — used sparingly for display impact.
+const anton = Anton({
+  variable: "--font-anton",
+  weight: "400",
   subsets: ["latin"],
 });
 
@@ -76,7 +84,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="fr"
       suppressHydrationWarning
-      className={`${inter.variable} ${poppins.variable} ${jetbrainsMono.variable} h-full antialiased`}
+      className={`${inter.variable} ${poppins.variable} ${jetbrainsMono.variable} ${anton.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <script dangerouslySetInnerHTML={{ __html: THEME_BOOTSTRAP_SCRIPT }} suppressHydrationWarning />

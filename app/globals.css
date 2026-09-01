@@ -75,6 +75,7 @@
   --font-sans: var(--font-inter);
   --font-display: var(--font-poppins);
   --font-mono: var(--font-jetbrains);
+  --font-headline: var(--font-anton);
 }
 
 * {
@@ -97,6 +98,10 @@ body {
 
 .font-mono {
   font-family: var(--font-mono);
+}
+
+.font-headline {
+  font-family: var(--font-headline);
 }
 
 ::selection {

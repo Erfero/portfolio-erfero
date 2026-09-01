@@ -81,7 +81,7 @@ export function Hero() {
 
       <div className="pointer-events-none absolute inset-x-0 top-[8vh] select-none opacity-[0.16] mix-blend-overlay md:top-[6vh]">
         <Marquee>
-          <span className="font-display text-[18vw] font-extrabold uppercase leading-none tracking-tight whitespace-nowrap md:text-[13vw]">
+          <span className="font-headline text-[18vw] uppercase leading-none tracking-tight whitespace-nowrap md:text-[13vw]">
             {site.name}
           </span>
         </Marquee>
