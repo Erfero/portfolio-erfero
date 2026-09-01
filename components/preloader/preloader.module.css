@@ -1,0 +1,218 @@
+.overlayRoot {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #fafafa;
+  will-change: clip-path;
+}
+
+.overlayBg {
+  position: absolute;
+  inset: 0;
+  background: #0a0a0a;
+  z-index: 0;
+}
+
+.overlayCover {
+  position: absolute;
+  inset: 0;
+  background: #0a0a0a;
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.logoWrap {
+  position: absolute;
+  top: clamp(1.5rem, 4vw, 3rem);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.logoOffset {
+  display: block;
+}
+
+.logoSplitMask {
+  display: block;
+  clip-path: inset(0% 0% 100% 0%);
+}
+
+.logoImage {
+  display: block;
+  width: clamp(2.5rem, 5vw, 4rem);
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+.percentWrap {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.percentMask {
+  overflow: hidden;
+}
+
+.percentExitInner {
+  display: block;
+}
+
+.rollingPercent {
+  display: flex;
+  align-items: flex-start;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(4.5rem, 16vw, 11rem);
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+}
+
+.digitViewport {
+  overflow: hidden;
+  height: 0.9em;
+}
+
+.digitStrip {
+  display: flex;
+  flex-direction: column;
+}
+
+.digitSlot {
+  height: 0.9em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.percentSymbol {
+  color: var(--accent);
+  margin-left: 0.15em;
+  align-self: flex-start;
+  font-size: 0.4em;
+  margin-top: 0.2em;
+}
+
+.tagline {
+  position: absolute;
+  bottom: clamp(4.5rem, 10vh, 6rem);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  gap: 0.5em;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #a7a0a0;
+  overflow: hidden;
+}
+
+.taglineLine {
+  display: inline-block;
+  opacity: 0;
+}
+
+.quoteWrap {
+  position: absolute;
+  bottom: clamp(7.5rem, 16vh, 9.5rem);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  max-width: min(90vw, 32rem);
+  text-align: center;
+  overflow: hidden;
+}
+
+.quote {
+  margin: 0;
+}
+
+.quoteText {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(0.85rem, 1.4vw, 1rem);
+  color: #d4d4d4;
+  overflow: hidden;
+}
+
+.quoteAuthor {
+  display: block;
+  margin-top: 0.4rem;
+  font-family: var(--font-mono);
+  font-style: normal;
+  font-size: 0.7rem;
+  color: #737373;
+  overflow: hidden;
+}
+
+.copyrightWrap {
+  position: absolute;
+  bottom: clamp(1.25rem, 3vh, 2rem);
+  left: clamp(1.25rem, 4vw, 2.5rem);
+  right: clamp(1.25rem, 4vw, 2.5rem);
+  z-index: 2;
+  overflow: hidden;
+}
+
+.copyrightText {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  color: #737373;
+}
+
+.splitWrap {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.progressBarWrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.progressBarFill {
+  position: absolute;
+  inset: 0;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+
+.progressBarExit {
+  position: absolute;
+  inset: 0;
+  background: #fafafa;
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+
+@media (max-width: 640px) {
+  .quoteWrap {
+    bottom: 7rem;
+  }
+  .tagline {
+    bottom: 4rem;
+  }
+}

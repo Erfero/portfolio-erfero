@@ -5,7 +5,7 @@ import { useLocale } from "@/lib/locale-context";
 import { projects } from "@/data/projects";
 import { SectionLabel } from "@/components/ui/section-label";
 import { Reveal } from "@/components/ui/reveal";
-import { ProjectCard } from "@/components/sections/project-card";
+import { ProjectRow } from "@/components/sections/project-card";
 import type { ProjectCategory } from "@/lib/types";
 
 type Filter = ProjectCategory | "all";
@@ -49,10 +49,10 @@ export function ProjectsContent() {
           ))}
         </Reveal>
 
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 flex flex-col border-t border-border">
           {filtered.map((project, i) => (
-            <Reveal key={project.slug} delay={(i % 6) * 0.05}>
-              <ProjectCard project={project} />
+            <Reveal key={project.slug} delay={(i % 6) * 0.04}>
+              <ProjectRow project={project} index={i} />
             </Reveal>
           ))}
         </div>

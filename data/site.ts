@@ -19,6 +19,22 @@ export const site = {
     fr: "J'accompagne les fondateurs et les équipes pour transformer leurs idées en produits web solides : sites, applications, boutiques Shopify et plateformes sur-mesure, du frontend à la base de données.",
     en: "I help founders and teams turn their ideas into solid web products: sites, applications, Shopify stores and custom platforms, from the frontend down to the database.",
   },
+  introTitleLead: {
+    fr: "Je suis un",
+    en: "I am a",
+  },
+  introTitleAccent: {
+    fr: "développeur web qui transforme les idées de fondateurs en produits solides.",
+    en: "web developer who turns founders' ideas into solid products.",
+  },
+  introTitleTail: {
+    fr: "Interfaces soignées, code maintenable, exécution rapide.",
+    en: "Polished interfaces, maintainable code, fast execution.",
+  },
+  introDescription: {
+    fr: "Du frontend à la base de données, je construis des sites, applications, boutiques Shopify et plateformes sur-mesure prêtes pour de vrais utilisateurs.",
+    en: "From the frontend to the database, I build sites, applications, Shopify stores and custom platforms ready for real users.",
+  },
   bio: {
     fr: "Je suis développeur web full stack. J'accompagne les fondateurs et les équipes pour transformer leurs idées en produits prêts pour de vrais utilisateurs. Je travaille en étroite collaboration avec le design et le marketing pour livrer des interfaces soignées, rapides, et un code maintenable — du frontend à l'API jusqu'à la base de données.",
     en: "I'm a full stack web developer. I help founders and teams turn their ideas into products ready for real users. I work closely with design and marketing to ship polished, fast interfaces and maintainable code — from the frontend to the API down to the database.",

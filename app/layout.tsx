@@ -5,6 +5,7 @@ import { LocaleProvider } from "@/lib/locale-context";
 import { ThemeProvider, THEME_BOOTSTRAP_SCRIPT } from "@/lib/theme-context";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
+import { PreloaderGate } from "@/components/preloader/preloader-gate";
 import { site } from "@/data/site";
 
 const inter = Inter({
@@ -85,9 +86,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         />
         <ThemeProvider>
           <LocaleProvider>
-            <SiteHeader />
-            <main className="flex-1">{children}</main>
-            <SiteFooter />
+            <PreloaderGate>
+              <SiteHeader />
+              <main className="flex-1">{children}</main>
+              <SiteFooter />
+            </PreloaderGate>
           </LocaleProvider>
         </ThemeProvider>
       </body>
