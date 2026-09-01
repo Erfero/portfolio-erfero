@@ -1,12 +1,13 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { useLocale } from "@/lib/locale-context";
 import { SectionLabel } from "@/components/ui/section-label";
 import { Reveal } from "@/components/ui/reveal";
 import { Button } from "@/components/ui/button";
+import { DeviceMockup } from "@/components/ui/device-mockup";
+import { OtherProjects } from "@/components/sections/other-projects";
 import type { Project } from "@/lib/types";
 
 export function ProjectDetailContent({ project }: { project: Project }) {
@@ -48,13 +49,9 @@ export function ProjectDetailContent({ project }: { project: Project }) {
       </div>
 
       {project.image && (
-        <Reveal delay={0.1}>
-          <div className="mx-auto mt-12 max-w-5xl px-6">
-            <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl border border-border bg-secondary">
-              <Image src={project.image} alt={t(project.name)} fill sizes="80rem" className="object-cover object-top" />
-            </div>
-          </div>
-        </Reveal>
+        <div className="mt-12">
+          <DeviceMockup image={project.image} alt={t(project.name)} />
+        </div>
       )}
 
       <div className="mx-auto mt-16 grid max-w-4xl gap-12 px-6 md:grid-cols-2">
@@ -94,6 +91,10 @@ export function ProjectDetailContent({ project }: { project: Project }) {
           <SectionLabel>{locale === "fr" ? "Résultat" : "Result"}</SectionLabel>
           <p className="text-foreground">{t(project.results)}</p>
         </Reveal>
+      </div>
+
+      <div className="mt-16">
+        <OtherProjects currentSlug={project.slug} />
       </div>
     </article>
   );
